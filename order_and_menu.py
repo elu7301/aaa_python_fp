@@ -1,6 +1,6 @@
 import click
 import random
-from pizza_class import Margherita, Pepperoni, Hawaiian
+from pizza import Margherita, Pepperoni, Hawaiian
 
 
 @click.group()

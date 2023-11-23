@@ -1,6 +1,6 @@
 import pytest
 from click.testing import CliRunner
-from order_menu_func import order, menu
+from order_and_menu import order, menu
 
 
 def test_order_with_valid_pizza_type():

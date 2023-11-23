@@ -1,5 +1,5 @@
 import pytest
-from pizza_class import Margherita, Pepperoni, Hawaiian
+from pizza import Margherita, Pepperoni, Hawaiian
 
 
 def test_pizza_class():
