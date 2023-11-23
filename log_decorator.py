@@ -1,5 +1,4 @@
 import random
-from pizza_class import Margherita
 
 
 def log(func_or_template):
@@ -72,13 +71,3 @@ def pickup(pizza):
     Args:
         pizza (Pizza): The pizza to be picked up.
     """
-
-
-if __name__ == "__main__":
-    margherita_pizza = Margherita('L')
-
-    bake(margherita_pizza)
-
-    delivery(margherita_pizza)
-
-    pickup(margherita_pizza)

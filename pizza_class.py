@@ -105,20 +105,3 @@ class Hawaiian(Pizza):
         super().__init__(size)
         self.add_ingredients('Chicken')
         self.add_ingredients('Pineapples')
-
-
-if __name__ == "__main__":
-    margherita_L = Margherita('L')
-    margherita_XL = Margherita('XL')
-    pepperoni_L = Pepperoni('L')
-    pepperoni_XL = Pepperoni('XL')
-    hawaiian_L = Hawaiian('L')
-    hawaiian_XL = Hawaiian('XL')
-
-    print(margherita_L.dict())
-    print(pepperoni_XL.dict())
-    print(hawaiian_L.dict())
-
-    print(hawaiian_L == margherita_L)
-    print(hawaiian_L == hawaiian_XL)
-    print(hawaiian_L == hawaiian_L)

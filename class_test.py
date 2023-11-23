@@ -3,25 +3,25 @@ from pizza_class import Margherita, Pepperoni, Hawaiian
 
 
 def test_pizza_class():
-    margherita_l = Margherita('L')
-    pepperoni_xl = Pepperoni('XL')
-    hawaiian_l = Hawaiian('L')
-    hawaiian_xl = Hawaiian('XL')
+    margherita_large = Margherita('L')
+    pepperoni_extra_large = Pepperoni('XL')
+    hawaiian_large = Hawaiian('L')
+    hawaiian_extra_large = Hawaiian('XL')
 
-    assert (margherita_l.dict() ==
+    assert (margherita_large.dict() ==
             {'Size': 'L',
              'Ingredients': ['Tomato sauce', 'Mozzarella', 'Tomatoes']})
-    assert (pepperoni_xl.dict() ==
+    assert (pepperoni_extra_large.dict() ==
             {'Size': 'XL',
              'Ingredients': ['Tomato sauce', 'Mozzarella', 'Pepperoni']})
-    assert (hawaiian_l.dict() ==
+    assert (hawaiian_large.dict() ==
             {'Size': 'L',
              'Ingredients': ['Tomato sauce', 'Mozzarella',
                              'Chicken', 'Pineapples']})
 
-    assert hawaiian_l == hawaiian_l
-    assert hawaiian_l != hawaiian_xl
-    assert hawaiian_l != margherita_l
+    assert hawaiian_large == hawaiian_large
+    assert hawaiian_large != hawaiian_extra_large
+    assert hawaiian_large != margherita_large
 
 
 if __name__ == "__main__":
